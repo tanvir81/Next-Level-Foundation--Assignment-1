@@ -52,7 +52,7 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   return fare;
 }
 
-// Question 5 Answer
+// Question 5 Answer -->
 
 const getChaseVerdict = (target, scored, ballsLeft) => {
   const runsNeeded = target - scored;
@@ -73,10 +73,3 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
   }
   return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
 };
-
-console.log(getChaseVerdict(200, 200, 12)); // Example usage
-console.log(getChaseVerdict(200, 190, 0)); // Example usage
-console.log(getChaseVerdict(100, 90, 12)); // Example usage
-console.log(getChaseVerdict(100, 80, 12)); // Example usage
-console.log(getChaseVerdict(100, 70, 12)); // Example usage
-console.log(getChaseVerdict(150, 149, 1)); // Example usage
