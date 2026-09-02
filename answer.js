@@ -24,3 +24,17 @@ function getDayType(day) {
       return "Invalid day";
   }
 }
+
+// Question 3 Answer
+function validateUserName(username) {
+  if (username.length < 4) {
+    return "Too Short";
+  }
+  if (username.includes(" ")) {
+    return "No Spaces Allowed";
+  }
+  if (username.toLowerCase().includes("admin")) {
+    return "Reserved Word";
+  }
+  return "Available";
+}
